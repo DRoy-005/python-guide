@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Programming – A Beginner's Guide</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: Georgia, "Times New Roman", serif;
+        background-color: #0d1117;
+        color: #e6edf3;
+        line-height: 1.75;
+      }
+
+      header {
+        background-color: #161b22;
+        border-bottom: 3px solid #f7c948;
+        padding: 2rem 1.5rem;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+        color: #f7c948;
+        letter-spacing: 0.04em;
+        margin-bottom: 0.4rem;
+      }
+
+      header p {
+        font-size: 1.05rem;
+        color: #8b949e;
+        font-style: italic;
+      }
+
+      nav {
+        background-color: #161b22;
+        padding: 0.6rem 1.5rem;
+        text-align: center;
+        border-bottom: 1px solid #30363d;
+      }
+
+      nav a {
+        color: #58a6ff;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-size: 0.95rem;
+        font-family: "Courier New", monospace;
+      }
+
+      nav a:hover { text-decoration: underline; }
+
+      main {
+        max-width: 860px;
+        margin: 2.5rem auto;
+        padding: 0 1.5rem 3rem;
+      }
+
+      section { margin-bottom: 3rem; }
+
+      h2 {
+        font-size: 1.6rem;
+        color: #f7c948;
+        border-left: 4px solid #f7c948;
+        padding-left: 0.75rem;
+        margin-bottom: 1rem;
+      }
+
+      p { margin-bottom: 1rem; }
+
+      .img-wrapper {
+        margin: 1.5rem 0;
+        text-align: center;
+      }
+
+      .img-wrapper img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #30363d;
+        border-radius: 6px;
+        display: block;
+        margin: 0 auto 0.5rem;
+      }
+
+      .img-wrapper figcaption {
+        font-size: 0.88rem;
+        color: #8b949e;
+        font-style: italic;
+      }
+
+      ul, ol {
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      li { margin-bottom: 0.45rem; }
+
+      pre {
+        background-color: #161b22;
+        border: 1px solid #30363d;
+        border-radius: 6px;
+        padding: 1rem 1.25rem;
+        overflow-x: auto;
+        font-family: "Courier New", monospace;
+        font-size: 0.9rem;
+        color: #79c0ff;
+        margin-bottom: 1rem;
+      }
+
+      a.ext-link {
+        color: #58a6ff;
+        font-weight: bold;
+      }
+
+      a.ext-link:hover { color: #f7c948; }
+
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.85rem;
+        color: #8b949e;
+        border-top: 1px solid #30363d;
+        background-color: #161b22;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Python Programming</h1>
+      <p>A beginner-friendly guide to the world's most popular language</p>
+    </header>
+
+    <nav aria-label="Page sections">
+      <a href="#about">About Python</a>
+      <a href="#features">Key Features</a>
+      <a href="#uses">Common Uses</a>
+      <a href="#resources">Resources</a>
+    </nav>
+
+    <main>
+
+      <section id="about">
+        <h2>What is Python?</h2>
+        <p>
+          Python is a high-level, general-purpose programming language created by
+          <strong>Guido van Rossum</strong> and first released in 1991. It is known for its
+          clean, readable syntax that closely resembles plain English, making it an excellent
+          first language for beginners and a powerful tool for professionals.
+        </p>
+        <figure class="img-wrapper">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png"
+            alt="The official Python programming language logo, a blue and yellow snake icon"
+            width="200"
+            height="200"
+          />
+          <figcaption>The official Python logo</figcaption>
+        </figure>
+        <p>
+          Python consistently ranks as one of the top programming languages in the world
+          according to the TIOBE Index and Stack Overflow's Developer Survey. Its community is
+          massive, meaning help, tutorials, and third-party libraries are always within reach.
+        </p>
+      </section>
+
+      <section id="features">
+        <h2>Key Features of Python</h2>
+        <p>
+          Python stands out from other languages because of several design decisions that
+          prioritize developer productivity and code readability.
+        </p>
+        <figure class="img-wrapper">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/1280px-Python_logo_and_wordmark.svg.png"
+            alt="Python programming language name written next to its snake icon logo in blue and yellow"
+            width="420"
+            height="120"
+          />
+          <figcaption>Python wordmark used in official documentation and branding</figcaption>
+        </figure>
+        <ul>
+          <li><strong>Readable syntax</strong> – Code reads almost like English, reducing the learning curve for new programmers.</li>
+          <li><strong>Dynamically typed</strong> – No need to declare variable types; Python figures it out at runtime.</li>
+          <li><strong>Interpreted language</strong> – Code runs line by line, which makes debugging faster and easier.</li>
+          <li><strong>Extensive standard library</strong> – Python ships with modules for file I/O, networking, JSON, math, and much more.</li>
+          <li><strong>Cross-platform</strong> – The same Python script runs on Windows, macOS, and Linux without modification.</li>
+          <li><strong>Object-oriented and functional</strong> – Python supports multiple programming paradigms.</li>
+        </ul>
+        <p>Here is a classic "Hello, World!" example in Python:</p>
+        <pre><code>print("Hello, World!")</code></pre>
+        <p>
+          That single line is all it takes to display output — no boilerplate, no imports, no
+          curly braces required.
+        </p>
+      </section>
+
+      <section id="uses">
+        <h2>Common Uses of Python</h2>
+        <p>
+          Python's versatility means it appears in almost every field of software development.
+          Below are some of the most popular applications of Python today.
+        </p>
+        <figure class="img-wrapper">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/640px-Scikit_learn_logo_small.svg.png"
+            alt="Scikit-learn machine learning library logo, featuring an orange and grey circular design"
+            width="200"
+            height="160"
+          />
+          <figcaption>Scikit-learn — one of Python's most popular machine learning libraries</figcaption>
+        </figure>
+        <ol>
+          <li><strong>Data Science &amp; Machine Learning</strong> – Libraries like NumPy, Pandas, TensorFlow, and Scikit-learn make Python the dominant language for AI and data analysis.</li>
+          <li><strong>Web Development</strong> – Frameworks like Django and Flask power millions of websites and REST APIs.</li>
+          <li><strong>Automation &amp; Scripting</strong> – Python excels at automating repetitive tasks such as file management, web scraping, and report generation.</li>
+          <li><strong>Scientific Computing</strong> – Researchers in physics, biology, and economics use Python for simulations and data visualization with Matplotlib.</li>
+          <li><strong>Cybersecurity</strong> – Penetration testers and security researchers rely on Python to write exploit scripts and analyze network traffic.</li>
+        </ol>
+      </section>
+
+      <section id="resources">
+        <h2>Learning Resources</h2>
+        <p>
+          The best place to start your Python journey is the official documentation, which
+          includes a step-by-step tutorial for absolute beginners. You can access it here:
+        </p>
+        <p>
+          
+            class="ext-link"
+            href="https://docs.python.org/3/tutorial/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Official Python 3 Tutorial – docs.python.org
+          </a>
+        </p>
+        <p>Other highly recommended resources include:</p>
+        <ul>
+          <li><a href="https://www.python.org" target="_blank" rel="noopener noreferrer">python.org</a> – The official Python website with downloads, news, and community links.</li>
+          <li><a href="https://realpython.com" target="_blank" rel="noopener noreferrer">Real Python</a> – In-depth tutorials, articles, and video courses for all skill levels.</li>
+          <li><a href="https://www.w3schools.com/python/" target="_blank" rel="noopener noreferrer">W3Schools Python Reference</a> – Quick-reference guides and interactive examples.</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>Created for WD4E Final Project &mdash; Python Programming Guide &mdash; 2025</p>
+    </footer>
+
+  </body>
+</html>
